@@ -1,0 +1,47 @@
+<!--bloodPressure-->
+<div class="heartRate bloodPressure" id="bloodPressure" ng-controller="bloodPressureCtrl"></div>
+
+<!--temp-->
+<div class="bloodPressureTemp" id="bloodPressureTemp" style="display: none">
+    <div class="date">
+        <div class="day">{{month}}月{{date}}日</div>
+        <div class="blank"></div>
+        <div class="icon">></div>
+    </div>
+
+    <div class="chart" id="chart">
+        <!--<img src="img/table.png" alt="">-->
+        <canvas id="cvs" width="352" height="180">您的浏览器不支持canvas</canvas>
+
+        <div class="tips hide" id="tips">
+            <div class="item">82 <span>正常</span></div>
+            <div class="item">Point <span>- 查看</span></div>
+        </div>
+
+    </div>
+    <div class="record">
+        <div class="item">
+            <div class="aside">ABP正常值：白昼<135/85</div>
+            <div class="aside"><img src="img/green.png" alt="">舒张压</div>
+        </div>
+        <div class="item">
+            <div class="aside">夜间<120/70</div>
+            <div class="aside"><img src="img/blue.png" alt="">收缩压</div>
+        </div>
+        <div class="item">
+            <div class="aside">
+                <div>舒张压</div>
+                <div>121</div>
+                <div>mmHg</div>
+            </div>
+            <div class="aside">
+                <div>收缩压</div>
+                <div>78</div>
+                <div>mmHg</div>
+            </div>
+            <div class="aside">
+                <img src="img/Bitmap.png" alt="">测量结果在正常范围内
+            </div>
+        </div>
+    </div>
+</div>

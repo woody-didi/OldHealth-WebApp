@@ -1,0 +1,197 @@
+/***************container***************/
+.container{width:100vw;height:100vh;display: flex;flex-direction:column;position: relative;}
+
+/*.top{width:96%;position: absolute;left:0;top:0;display: flex;flex-direction: row;z-index: 19;color:#fff;padding:0 2vw;}
+.top .item{width: 33.3%;}
+.top .item i{width: 7px;height: 7px;transform: scale(0.7);margin-top: 6px;}
+.top .item:nth-child(1) .sketch{padding:0 4px 0 2px;}
+.top .item:nth-child(2){text-align: center;}
+.top .item:nth-child(3){text-align: right;}*/
+
+/***share****/
+.share{flex-grow: 1;display:flex;flex-direction: column;}
+.share>div[ui-view]{flex-grow: 1;display:flex;flex-direction: column;}
+
+/***footer***/
+.footer {height: 9%;background: #f3f3f3; display:flex;flex-direction: row;width: 100%;border-top: 1px solid #E6E6E6;padding-bottom: 2vw;}
+.footer .item{ width:25%;text-align: center;padding-top:8px; }
+.footer .item a{ color:#868686;display: inline-block;line-height: 1.8;padding-top: 30%;width:30%;background: no-repeat 50% 0 ;background-size: 90% auto;}
+.footer .item.ac a{color:#01CCE7; }
+
+
+/***************health***************/
+.health,.found,.recommend,.mine {width: 100vw;display: flex;flex-direction: column;flex-grow: 1;position: relative;}
+.found .top,.recommend .top,.mine .top{opacity: 0;}
+
+/*header*/
+.health .header,.found .header,.recommend .header,.mine .header{height: 24vh;display: flex;flex-direction: column;}
+
+.health header,.found header,.recommend header,.mine header {line-height: 6.9vh; background: #01cce7;text-align: center;position: relative;z-index: 3;color: #fff;font-size:20px}
+
+.health nav,.found nav,.recommend nav {line-height: 6vh;height:6vh;padding:1.8vh 0 0 0;background: #efefef;position: relative;z-index: 2;box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);display: flex;flex-direction: row;  align-items: center;}
+.health nav .item {width: 21.6%;text-align: center;font-size: 15px;}
+.health nav .item a{padding:0.7%;font-size: 15px;color: #868686;}
+.health nav .item:nth-child(2) {padding: 0 4.5%;}
+.health nav .item:nth-child(3) {padding: 0 4.5% 0 0;}
+.health nav .item.ac a{color: #01cce7;}
+
+.health .title{line-height: 6.5vh;padding:2.8vh 0 0 0;background: #f5f5f5;display: flex;flex-direction:row;}
+.health .title .item:nth-child(1){ width:32.3%;text-align: center;font-size: 18px;}
+.health .title .item:nth-child(2){flex-grow:1;}
+.health .title .item:nth-child(3){width:20%;text-align: center; }
+.health .title .item:nth-child(3) a{color:#b4b4b4;font-size: 14px;}
+
+/*share*/
+.health #share,.found #share,.recommend #share,.mine #share{flex-grow:1;width: 100%;display:flex;flex-direction: column;}
+.health #share>div[ui-view="health"]{flex-grow: 1;display:flex;flex-direction: column;}
+
+/*heartRate*/
+.heartRate{height: 100%;display: flex;flex-direction:column;flex-grow: 1;}
+.heartRate .date { height:10vh; display: flex; flex-direction:row;padding:5px 3vw 0;  align-items: center;font-size: 14px;}
+.heartRate .date .day {color:#b1b1b1;}
+.heartRate .date .blank { flex-grow:1;}
+.heartRate .date .icon {text-align: right;color:#a6a6a6;font: 10px/1 "consolas"}
+
+.heartRate .chart {padding:0 3vw 0;position: relative;}
+.heartRate .chart canvas {width: 100%;display: block;}
+.heartRate .clock {display:flex;flex-direction: row;width: 100%;}
+.heartRate .clock .item{font:12px/1.7 '';color:#999;text-align: center;}
+.heartRate .clock .item:nth-child(1){width:36%;margin-left:10%;}
+.heartRate .clock .item:nth-child(2){width:18%;}
+.heartRate .clock .item:nth-child(3){width:36%;}
+
+.heartRate .tips{position: absolute;left: 0;top: 0;width: 90px;height: 43px;box-shadow: 2px 2px 5px rgba(0,0,0,0.2) }
+.heartRate .tips .item {font:15px/1.5 "";color:#818181;}
+.heartRate .tips .item:nth-child(1) span{padding:0 7px;background: #5edc20;color:#fff;border-radius: 5px;display: inline-block;font:10px/1.4 ""}
+.heartRate .tips .item:nth-child(1){padding:0 0 0 20px;}
+.heartRate .tips .item:nth-child(2){font:10px/1.4 "";padding: 0 0 0 16px;}
+.heartRate .tips .item:nth-child(2) span{font:12px/1.4 "";color:#ffa75b;}
+
+
+.heartRate .record {flex-grow:1; display: flex; flex-direction:column;font-size: 14px;}
+.heartRate .record>div {margin:auto 0;}
+.heartRate .record .item {display: flex; flex-direction:row;padding: 0 3vw 0 7vw;line-height: 5.4vh;color:#b4b4b4;}
+.heartRate .record .item:nth-child(1) {color:#54E60C;}
+.heartRate .record .item:nth-child(2) { border-bottom: 1px solid #f6f6f6;}
+.heartRate .record .item:nth-child(3) {color:#FF983E;}
+.heartRate .record .item:nth-child(4) { border-bottom: 1px solid #f6f6f6;}
+.heartRate .record .aside {width:50%;}
+.heartRate .record .item .aside:nth-child(2) {text-align: right;}
+
+/*bloodPressure*/
+.bloodPressure .chart {padding:0 3vw;}
+.bloodPressure .clock .item{font:12px/2 '';}
+.bloodPressure .clock .item:nth-child(1){width:25%;margin-left:12.5%;}
+.bloodPressure .clock .item:nth-child(2){width:25%;}
+.bloodPressure .clock .item:nth-child(3){width:25%;margin-right:12.5%;}
+.bloodPressure .record {padding: 10px 0 0 0;}
+.bloodPressure .record .item {font:12px/2 '';color:#b4b4b4;padding:0 3vw;}
+.bloodPressure .record .item .aside{text-align: right;}
+.bloodPressure .record .item .aside:nth-child(1){padding-right: 15vw;}
+.bloodPressure .record .item .aside:nth-child(2){color:#212121;}
+.bloodPressure .record .item .aside:nth-child(2) img{width:20%;margin-right: 13px;}
+.bloodPressure .record .item:nth-child(1){color:#b4b4b4 ;}
+.bloodPressure .record .item:nth-child(2) {padding-bottom: 2vh; }
+.bloodPressure .record .item:nth-child(3) {display:flex;flex-direction: row;}
+.bloodPressure .record .item:nth-child(3) .aside {width:26%;text-align: center;display:flex;flex-direction: column;}
+.bloodPressure .record .item:nth-child(3) .aside:nth-child(1){padding-right: 0;}
+
+.bloodPressure .record .item:nth-child(3) .aside div:nth-child(1){line-height: 2.7;color:#b4b4b4;}
+.bloodPressure .record .item:nth-child(3) .aside div:nth-child(2){font: 26px/1 "";color:#000;}
+.bloodPressure .record .item:nth-child(3) .aside div:nth-child(3){line-height: 2.7;color:#b4b4b4;}
+.bloodPressure .record .item:nth-child(3) .aside:nth-child(3) {flex-grow:1;color:#54e50c;line-height: 3;padding:15px 0 0 0;}
+.bloodPressure .record .item:nth-child(3) .aside:nth-child(3) img{width:17%;margin: 0 auto;}
+
+/*stepNumber*/
+.stepNumber .target{font:14px/3.5 "";color:#999;padding:0 0 0 25px;}
+.stepNumber .complete{font:11px/1 "";color:#54E60C;text-align: right;padding:0 25px 0 0 ;}
+
+/*sleep*/
+.sleep .date:nth-child(3) .day{color:#000;text-transform: capitalize;font:bold 18px/1 "";}
+.sleep .date:nth-child(3) .icon{color:#01CCE7;font-size: 10px;}
+.sleep .shag{height:7.8vh;}
+
+
+
+/***************found***************/
+.found .header{height: 21vh;background: #f5f5f5;}
+.found .header nav,.recommend .header nav{padding:1.2vh 3vw;position: relative;}
+.found .header nav input,.recommend .header nav input{height:100%;width: 100%;font:15px/2 "";border: 1px solid #F5F5F5;border-radius: 8px;text-align: center;color:#999999;background:#fff; padding-left: 25px;}
+.found .header nav a,.recommend .header nav a{position: absolute;left: 43%;top: 9px;}
+.found .title{line-height: 6.4vh;text-align: center;font-size: 14px;color:#999;}
+
+.found #share,.recommend #share{background: #f5f5f5;display: flex;flex-direction: column;overflow: hidden;flex-grow: 1;}
+/*.found #share>div[ui-view="found"]{flex-grow: 1;display: flex;flex-direction: column;}*/
+.found #share .items{height: 60vh;display: flex;flex-direction: row;flex-wrap: nowrap;align-items: center;padding-left: 14vw;transition: all 0.5s;position:relative;left:0;}
+.found #share .item{min-width:56vw;height: 45vh;margin:-5vh 8vw 0;box-shadow: 0 3px 10px rgba(0,0,0,0.1);border-radius: 8px;background: #fff;transition: all 0.3s;overflow: hidden;transform-origin: center;position: relative;}
+.found #share .item.ac{transform: scale(1.2);}
+.found #share .item .pic{display:block;font-size:0;height: 27vh;overflow: hidden;width: 100%;}
+.found #share .item img{width:100%;}
+.found #share .item p{padding:0 20px;font:12px/1.5 "Microsoft YaHei";color:#333;}
+.found #share .item p:nth-child(2){padding-top:5px;}
+.found #share .item p:nth-child(3){text-align:right;}
+.found #share .item p:nth-child(4) a{ color:#333;display:block;line-height: 2.2;padding: 0 15px;border: 1px solid #bbb;border-radius: 7px;position: absolute;bottom:20px;left: 50%;margin-left: -42px;}
+.found #share .item p:nth-child(4) a:hover{background: #f5f5f5;}
+
+.found_footer{height:7vh;display: flex;padding:0 3vw;flex-direction: row;justify-content: space-between;background:#f5f5f5;align-items: flex-end}
+.found_footer .item{width: 13.3%;text-align: center;background: #fff;box-shadow: 3px 1px 5px rgba(0,0,0,0.1);height: 4vh;border-radius: 5px 5px 0 0;transition: height 0.3s,color 0.3s;}
+.found_footer .item.ac{height: 7vh;background: #5edeef no-repeat 50% 50%;background-size: 60% auto;}
+.found_footer .item.ac a{color:transparent;}
+.found_footer .item a{font:12px/2.1 "";color:#999;}
+
+/***************recommend***************/
+.recommend .header{height: 14.6vh;}
+.recommend .header nav{box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);}
+.recommend #share{padding:10px 3vw 0;overflow-y: scroll;width:94vw;height: 50vh;}
+.recommend #share .items{width: 94vw;color:#999;}
+.recommend #share .items .pic{width: 100%;position: relative;font-size: 0;}
+.recommend #share .items .pic img{width: 100%;}
+.recommend #share .items .pic .disc{position: absolute;left:0;bottom:0;color:#fff;font:20px/3 "";padding:0 0 0 26px;}
+.recommend #share .items h4{font:12px/3 "";color:#333;padding: 0 0 0 12px;}
+.recommend #share .items .comment{padding:0 12px;}
+.recommend #share .items .comment .item:nth-child(1){display: flex;flex-direction: row;justify-content: space-between;}
+.recommend #share .items .comment .item:nth-child(2){padding:9px 0 0 0;line-height: 1.5;}
+.recommend #share .items .comment .item:nth-child(3){text-align: right;}
+.recommend #share .items .comment .item:nth-child(3) a{padding:0 0 0 30px;color: #FFA353;line-height: 5;}
+.recommend #share .items .comment .item ._item{ display:flex;flex-direction:row;align-items: center;}
+.recommend #share .items .comment .item ._item:nth-child(1) img{width: 30px;}
+.recommend #share .items .comment .item ._item:nth-child(1) span {padding:0 10px;font: 12px/1 "";color:#333;}
+.recommend #share .items .comment .item ._item:nth-child(2) img {width:15px;}
+.recommend #share .items .comment .item ._item:nth-child(2) span {padding:0 15px 0 5px;}
+
+
+
+
+/***************mine***************/
+.mine{font:10px/2 "";color:#666;}
+.mine .header{height: 8vh;}
+.mine .detail{flex-grow: 1;background: #f5f5f5;}
+.mine .detail .person{background: #fff;display: flex;flex-direction: row;height: 15vh;align-items: center;border-bottom: 1px solid #f6f6f6;}
+.mine .detail .person .item:nth-child(1){width:23vw;text-align: center;}
+.mine .detail .person .item:nth-child(1) img{width:50%;}
+.mine .detail .person .item:nth-child(2){flex-grow: 1;}
+.mine .detail .person .item:nth-child(2)>div:nth-child(1){font:14px/2.2 "";color:#333;}
+.mine .detail .person .item:nth-child(2)>div:nth-child(2),.mine .detail .person .item:nth-child(2)>div:nth-child(3){font:10px/2 "";color:#666;}
+.mine .detail .person .item:nth-child(2)>div:nth-child(1) span{font:12px/2.5 "";padding:0 0 0 15px;}
+.mine .detail .person .item:nth-child(3){width: 15.2vw; color:#666;text-align: center;font:10px/1 "" }
+.mine .detail .person .item:nth-child(3) span{padding:0 0 0 5px;font:10px/1 "consolas"}
+
+.mine .detail .community{background: #fff;height:13.5vh;display: flex;flex-direction: row;}
+.mine .detail .community .item{text-align: center;padding-top: 12px;}
+.mine .detail .community .item:nth-child(1){width: 31%;border-right:1px solid #f6f6f6}
+.mine .detail .community .item:nth-child(2){width: 31%;border-right:1px solid #f6f6f6}
+.mine .detail .community .item:nth-child(1) img{width: 34.5%;}
+.mine .detail .community .item:nth-child(2) img{width: 34.5%;}
+.mine .detail .community .item:nth-child(3) img{width: 70%;}
+.mine .detail .community .item:nth-child(3){flex-grow: 1;padding-top: 20px;}
+
+.mine .detail .service{background: #fff;margin:10px 0 0 0;display: flex;flex-direction: row;flex-wrap: wrap;text-align: center;}
+.mine .detail .service img{height: 36%;}
+.mine .detail .service .item{width: 33vw;height: 16.5vh;border-bottom: 1px solid #f6f6f6;padding-top: 30px;}
+.mine .detail .service .item:nth-child(2){border-left:1px solid #f6f6f6;border-right:1px solid #f6f6f6}
+.mine .detail .service .item:nth-child(4){width:49vw;border-right: 1px solid #f6f6f6}
+.mine .detail .service .item:nth-child(5){flex-grow: 1;}
+
+
+
+

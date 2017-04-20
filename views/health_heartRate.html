@@ -1,0 +1,49 @@
+<!--heartRate-->
+<div class="heartRate" id="heartRate" ng-controller="heartRateCtrl"></div>
+
+<!--temp-->
+<div class="heartRateTemp" style="display: none" id="heartRateTemp">
+
+    <div class="date">
+        <div class="day">{{month}}月{{date}}日</div>
+        <div class="blank"></div>
+        <div class="icon">></div>
+    </div>
+
+    <div class="chart" id="chart">
+        <canvas id="cvs" width="352" height="120">您的浏览器不支持canvas</canvas>
+        <div class="clock">
+            <div class="item">6:00</div>
+            <div class="item">12:00</div>
+            <div class="item">18:00</div>
+        </div>
+
+        <div class="tips hide" id="tips">
+            <div class="item">82 <span>正常</span></div>
+            <div class="item">Point <span>- 查看</span></div>
+        </div>
+
+    </div>
+
+    <div class="record">
+        <div>
+            <div class="item">
+                <div class="aside">正常：</div>
+                <div class="aside">60-100次 / 分 ></div>
+            </div>
+            <div class="item">
+                <div class="aside">尚未出现异常</div>
+                <div class="aside">持续检测中...</div>
+            </div>
+            <div class="item">
+                <div class="aside">异常：</div>
+                <div class="aside"><60 >100次 / 分 ></div>
+            </div>
+            <div class="item">
+                <div class="aside">历史记录 13 次</div>
+                <div class="aside">持续检测中...</div>
+            </div>
+
+        </div>
+    </div>
+</div>

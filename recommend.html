@@ -1,0 +1,48 @@
+<div class="recommend" ng-controller="recommendCtrl">
+    <!--globe-->
+    <div class="header">
+        <div class="top"></div>
+
+        <header>推荐</header>
+        <nav>
+            <input ng-class='"input"+"xxx"' type="text" placeholder="搜索" ng-click=""/>
+            <a><img src="img/searchicon.png" alt=""></a>
+        </nav>
+    </div>
+
+    <!--share-->
+    <div id="share">
+        <div ui-view=""></div>
+        <div ui-view="recommend"></div>
+    </div>
+</div>
+
+<!--recommendTmp-->
+<div class="recommendTmp" id="recommendTmp" style="display: none">
+    <div class="items" ng-repeat="item in recommendItems">
+        <div class="pic">
+            <img src="img/recom{{item.name}}@2x.png" alt="">
+            <div class="disc">{{item.disc}}</div>
+        </div>
+        <h4>精品阅读</h4>
+        <div class="comment">
+            <div class="item">
+                <div class="_item">
+                    <img src="img/recom{{item.txsrc}}@2x.png" alt="">
+                    <span>{{item.nickname}}</span>
+                    <i>{{item.group}}</i>
+                </div>
+                <div class="_item">
+                    <img src="img/Shape@2x.png" alt="">
+                    <span>{{item.zan}}</span>
+                    <i>人气 {{item.popularity}}</i>
+                </div>
+            </div>
+            <div class="item">{{item.cont}}</div>
+            <div class="item">
+                <a>分享</a>
+                <a>收藏</a>
+            </div>
+        </div>
+    </div>
+</div>

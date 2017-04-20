@@ -1,0 +1,139 @@
+{
+  "myCtrl": [
+    {
+      "ui_sref": "health",
+      "text": "健康",
+      "className": "ac",
+      "name": "heartRate",
+      "src1": "health_",
+      "src2": "blue"
+    },
+    {
+      "ui_sref": "found",
+      "text": "发现",
+      "className": "",
+      "name": "found",
+      "src1": "find_",
+      "src2": "grey"
+    },
+    {
+      "ui_sref": "recommend",
+      "text": "推荐",
+      "className": "",
+      "name": "",
+      "src1": "recom_",
+      "src2": "grey"
+    },
+    {
+      "ui_sref": "mine",
+      "text": "我的",
+      "className": "",
+      "name": "",
+      "src1": "mine_",
+      "src2": "grey"
+    }
+  ],
+  "healthCtrl": [
+    {
+      "ui_sref": "health.heartRate",
+      "text": "心率",
+      "className": "ac",
+      "name": "heartRate"
+    },
+    {
+      "ui_sref": "health.bloodPressure",
+      "text": "血压",
+      "className": "",
+      "name": "bloodPressure"
+    },
+    {
+      "ui_sref": "health.stepNumber",
+      "text": "步数",
+      "className": "",
+      "name": "stepNumber"
+    },
+    {
+      "ui_sref": "health.sleep",
+      "text": "睡眠",
+      "className": "",
+      "name": "sleep"
+    }
+  ],
+  "foundCtrl": [
+    {
+      "ui_sref": "found.charity",
+      "text": "慈善",
+      "className": "ac",
+      "name": "charity",
+      "cont": "“老吾老以及人之老，幼吾幼以及人之幼”",
+      "author": "——孟子"
+    },
+    {
+      "ui_sref": "found.activity",
+      "text": "活动",
+      "className": "",
+      "name": "activity",
+      "cont": "“静止便是死亡，只有运动才能敲开永生的大门”",
+      "author": "——泰戈尔"
+    },
+    {
+      "ui_sref": "found.volunteer",
+      "text": "志愿者",
+      "className": "",
+      "name": "volunteer",
+      "cont": "“一盏明灯，照亮他人温暖自己，为老人献上一丝温暖”",
+      "author": ""
+    },
+    {
+      "ui_sref": "found.heart",
+      "text": "心语",
+      "className": "",
+      "name": "heart",
+      "cont": "“这里，有他们的故事，他们的想法，他们的心语。”",
+      "author": ""
+    },
+    {
+      "ui_sref": "found.share",
+      "text": "分享",
+      "className": "",
+      "name": "share",
+      "cont": "“在这里可以尽情地交流和分享与老人相处的点点滴滴”",
+      "author": ""
+    }
+  ],
+  "recommendCtrl": [
+    {
+      "ui_sref": "recommend.photo",
+      "disc": "摄影：为妈妈照一张相",
+      "txsrc": "pic1",
+      "name": "photo",
+      "nickname": "小喵",
+      "group": "八零后",
+      "zan":"147",
+      "popularity":"10349",
+      "cont":"第一次认真的细看母亲的面庞，蓦然的发现，母亲好像不再那么年轻了，脸上的皱纹让我的内心开始颤抖，这是…"
+    },
+    {
+      "ui_sref": "recommend.talk",
+      "disc": "杂谈：迟暮之年的你我",
+      "txsrc": "pic2",
+      "name": "talk",
+      "nickname": "Lora",
+      "group": "八零后",
+      "zan":"247",
+      "popularity":"10447",
+      "cont":"人固有一死，每每想到父母辛劳的养育我们长大，看着他们渐渐老去的面容，却越来越无法接受这样的事实，仿..."
+    },
+    {
+      "ui_sref": "recommend.know",
+      "disc": "知识：国家的福利政策",
+      "txsrc": "pic2",
+      "name": "know",
+      "nickname": "Kathy Lawson",
+      "group": "八零后",
+      "zan":"921",
+      "popularity":"25379",
+      "cont":"那些你不知道的养老政策有哪些呢，今天就让我带领大家了解一下国家养老的措施，不知道的小伙伴们快来看吧…"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+<!--stepNumber-->
+<div class="heartRate stepNumber" id="stepNumber" ng-controller="stepNumberCtrl"></div>
+
+<!--temp-->
+<div class="stepNumberTemp" id="stepNumberTemp" style="display: none">
+    <div class="date">
+        <div class="day">{{month}}月{{date}}日</div>
+        <div class="blank"></div>
+        <div class="icon">></div>
+    </div>
+
+    <div class="chart" id="chart">
+        <!--<img src="img/table.png" alt="">-->
+        <canvas id="cvs" width="352" height="180">您的浏览器不支持canvas</canvas>
+
+        <div class="tips hide" id="tips">
+            <div class="item">82 <span>正常</span></div>
+            <div class="item">Point <span>- 查看</span></div>
+        </div>
+
+    </div>
+
+    <div class="target">目标:4000步</div>
+    <div class="chart2">
+        <!--<img src="img/table.png" alt="">-->
+        <canvas id="cvs2" width="352" height="90">您的浏览器不支持canvas</canvas>
+    </div>
+    <div class="complete">本周达标：4天</div>
+
+</div>

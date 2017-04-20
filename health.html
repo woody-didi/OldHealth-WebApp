@@ -1,0 +1,22 @@
+<div class="health" ng-controller="healthCtrl">
+    <!--globe-->
+    <div class="header">
+        <!--<div class="top"></div>-->
+        <header>健康</header>
+        <nav>
+            <div ng-repeat="item in healItems" ng-class='"item "+item.className'><a ui-sref="{{item.ui_sref}}" ng-click="healAddClass($index)">{{item.text}}</a></div>
+        </nav>
+        <div class="title">
+            <div class="item">{{item}}检测</div>
+            <div class="item"></div>
+            <div class="item"><a href="#/health/{{set_sref}}" ng-click="setHealth()">设置</a></div>
+        </div>
+    </div>
+
+    <!--share-->
+    <div id="share">
+        <div ui-view=""></div>
+        <div ui-view="health"></div>
+    </div>
+
+</div>

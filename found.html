@@ -1,0 +1,44 @@
+<div class="found" ng-controller="foundCtrl">
+    <!--globe-->
+    <div class="header">
+        <div class="top"></div>
+
+        <header>发现</header>
+        <nav>
+            <input ng-class='"input"+"xxx"' type="text" placeholder="搜索" ng-click=""/>
+            <a><img src="img/searchicon.png" alt=""></a>
+
+        </nav>
+        <div class="title">
+            <div class="item">{{foundItem}}</div>
+        </div>
+    </div>
+
+    <!--share-->
+    <div id="share">
+        <div ui-view=""></div>
+        <div ui-view="found"></div>
+
+    </div>
+
+    <!--footer-->
+    <div class="found_footer">
+        <div ng-repeat="item in foundItems" ng-class='"item "+item.className'
+             style="background-image:url('img/{{item.name}}@2x.png')"><a
+                ng-click="foundAddClass($index)">{{item.text}}</a></div>
+        <!--ui-sref="{{item.ui_sref}}"-->
+    </div>
+</div>
+
+<!--foundTmp-->
+<div class="foundTmp" id="foundTmp" style="display: none">
+    <div class="items clearfix" id="found_items">
+        <div ng-repeat="item in foundItems" ng-class='"item "+item.className'>
+            <span class="pic">
+                <img src="img/{{item.name}}banner@2x.png" alt=""></span>
+            <p>{{item.cont}}</p>
+            <p>{{item.author}}</p>
+            <p><a>进入板块</a></p>
+        </div>
+    </div>
+</div>

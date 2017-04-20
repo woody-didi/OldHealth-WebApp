@@ -1,0 +1,32 @@
+<!--sleep-->
+<div class="heartRate sleep" id="sleep" ng-controller="sleepCtrl"></div>
+
+<!--temp-->
+<div class="sleepTemp" id="sleepTemp" style="display: none">
+    <div class="date">
+        <div class="day">本周</div>
+        <div class="blank"></div>
+        <div class="icon">></div>
+    </div>
+
+    <div class="chart" id="chart">
+        <!--<img src="img/table.png" alt="">-->
+        <canvas id="cvs" width="352" height="140">您的浏览器不支持canvas</canvas>
+
+        <div class="tips hide" id="tips">
+            <div class="item">82 <span>正常</span></div>
+            <div class="item">Point <span>- 查看</span></div>
+        </div>
+    </div>
+
+    <div class="date shag">
+        <div class="day">Shag</div>
+        <div class="blank"></div>
+        <div class="icon">show</div>
+    </div>
+    <div class="chart2">
+        <!--<img src="img/table.png" alt="">-->
+        <canvas id="cvs2" width="352" height="140">您的浏览器不支持canvas</canvas>
+    </div>
+
+</div>
